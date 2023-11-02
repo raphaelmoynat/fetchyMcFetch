@@ -34,12 +34,7 @@ html body{
         border-radius: 5%;
     }
 
-    .navbar{
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-items: flex-end;
-    }
+
 }
 
 
@@ -74,15 +69,14 @@ html body{
         border-radius: 5%;
     }
 
-    .navbar{
-        height: 15%;
-        display: flex;
-        align-items: center;
-        justify-items: flex-end;
-    }
 }
 
-
+.navbar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+}
 
 
 
