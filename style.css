@@ -24,3 +24,20 @@ html body{
         background-position: center;
     }
 }
+
+.menuBurger{
+    height: 60px;
+    width : 60px;
+    border-radius: 10%;
+    border: yellow 4px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.steak{
+    width: 80%;
+    border: yellow 2px solid;
+    border-radius: 10%;
+}
