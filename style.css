@@ -85,7 +85,7 @@ html body{
 .menu{
     height: 100vh;
     width: 0;
-    background-color: #d20120;
+    background-color: #e10430;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,4 +108,13 @@ html body{
     text-transform: uppercase;
     cursor: pointer;
     display: none;
+}
+
+.link:hover{
+    color: dodgerblue;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
 }
