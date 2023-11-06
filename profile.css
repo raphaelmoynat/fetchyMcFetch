@@ -4,7 +4,7 @@ html body{
     overflow-x: hidden;
 }
 
-.fond{
+.fond2{
     background-color: #e10430;
     min-height: 100vh;
 }
@@ -12,3 +12,4 @@ html body{
 .card-link:hover {
     color: dodgerblue;
 }
+
