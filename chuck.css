@@ -1,0 +1,10 @@
+html body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.fond3{
+    background-color: #e10430;
+    min-height: 100vh;
+}
