@@ -1,4 +1,5 @@
 const boutonChuck = document.querySelector('.boutonChuck')
+const boutonRéinit = document.querySelector(".boutonRéinit")
 const texteBlague = document.querySelector('.chuck')
 
 async function vaChercherUneBlagueSurChuckNorris()
@@ -13,8 +14,12 @@ async function vaChercherUneBlagueSurChuckNorris()
 boutonChuck.addEventListener("click",()=>{
     vaChercherUneBlagueSurChuckNorris().then(data=> {
         let template = `<h3 class="p-2 text-center">${data.value}</h3>`
-        texteBlague.innerHTML += template;
+        texteBlague.innerHTML += template
     })
+})
+
+boutonRéinit.addEventListener("click", ()=>{
+    texteBlague.innerHTML = ""
 })
 
 const divButtons = document.querySelector('.boutonsCategories')
