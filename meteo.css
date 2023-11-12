@@ -8,3 +8,45 @@ html body{
     background-color: dodgerblue;
     min-height: 100vh;
 }
+
+.fondMeteo{
+    height: 50vh;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.fondSoleil{
+    background-image: url("img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+}
+
+.fondNuage{
+    background-image: url("img_1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+}
+
+.fondPluie{
+    background-image: url("img_2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+}
+
+.fondOrage{
+    background-image: url("img_3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+}
