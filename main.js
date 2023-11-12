@@ -9,7 +9,5 @@ burger.addEventListener('click', () => {
         menu.classList.remove('ouvert')
     } else {
         menu.classList.add('ouvert')
-
-
     }
 })
