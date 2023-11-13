@@ -1,0 +1,20 @@
+html body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.fond2{
+    background-color: dodgerblue;
+    min-height: 100vh;
+}
+
+.photo{
+    height: 250px;
+    width: 250px;
+}
+
+.typeImg{
+    height: 60px;
+    width: 60px;
+}

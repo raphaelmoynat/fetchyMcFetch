@@ -7,10 +7,10 @@ const description = document.querySelector('.description')
 const formulaire = document.querySelector('form')
 const fondMeteo = document.querySelector('.fondMeteo')
 
-function apiCall (city){
+async function apiCall (city){
     let url =  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=fr`
 
-    fetch(url)
+    await fetch(url)
     .then(response => response.json())
     .then(data=>{
         ville.innerHTML = "Ville : " + data.name
