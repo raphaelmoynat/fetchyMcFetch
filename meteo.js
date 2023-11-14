@@ -4,7 +4,7 @@ let apiKey = "ce0a228962dfaac649ae269ce87307ac"
 const ville = document.querySelector('.nomVille')
 const temp = document.querySelector('.temp')
 const description = document.querySelector('.description')
-const formulaire = document.querySelector('form')
+const button = document.querySelector('#submit')
 const fondMeteo = document.querySelector('.fondMeteo')
 
 async function apiCall (city){
@@ -41,9 +41,8 @@ function changeFond(description){
     }
 }
 
-formulaire.addEventListener('submit', function (e){
-    e.preventDefault()
-    const ville = document.getElementById('city').value
+button.addEventListener('click', function (){
+    const ville = document.querySelector('#city').value
     apiCall(ville)
 
 })

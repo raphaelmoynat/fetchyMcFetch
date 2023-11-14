@@ -1,7 +1,6 @@
 const burger = document.querySelector('.burger')
-const boutonMenu = document.querySelector('.boutonMenu')
 const menu = document.querySelector('.menu')
-const navbar = document.querySelector(".navbar")
+
 
 
 burger.addEventListener('click', () => {

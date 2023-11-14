@@ -6,11 +6,14 @@ const atk = document.querySelector('.atk')
 const def = document.querySelector('.def')
 const typeNom = document.querySelector('.typeNom')
 const typeImg = document.querySelector('.typeImg')
-const formulaire = document.querySelector('form')
+const button = document.querySelector('#submit')
+const nextEv = document.querySelector('.nextEv')
+const pokemon = document.querySelector('#pokemon')
 
-function apiCall(nom){
+
+async function apiCall(nom){
     let url = `https://tyradex.tech/api/v1/pokemon/${nom}`
-    fetch(url)
+    await fetch(url)
         .then(response=>response.json())
         .then(data=> {
             //console.log(data[0].name.fr)
@@ -32,15 +35,25 @@ function apiCall(nom){
           alt="#"
         />
       </div>`
+            if (data.evolution.next == null){
+                nextEv.innerHTML = "Ce pokémon n'a pas d'évolution"
+            }else{
+                nextEv.innerHTML = "Evolution : " + data.evolution.next[0].name
+            }
         })
 
 }
 
-
-
-formulaire.addEventListener('submit', function (e){
-    e.preventDefault()
-    const nomPokemon = document.getElementById('pokemon').value
+button.addEventListener('click', function () {
+    const nomPokemon = pokemon.value
     apiCall(nomPokemon)
-
 })
+
+pokemon.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        const nomPokemon = pokemon.value
+        apiCall(nomPokemon)
+    }
+})
+
+apiCall("dracaufeu")
